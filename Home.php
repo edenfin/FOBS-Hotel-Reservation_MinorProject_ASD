@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="shortcut icon" href="images/hotel_rooms/logo.jpg">
 <title> FOBS | Home </title>
 <link rel="stylesheet" type="text/css" href="css.css">
 </head>
