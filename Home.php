@@ -169,29 +169,7 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 </div>
 
 <div id="body">
-<!--
-<pre>
-<h9>Davao City</h9>
-<br><br>
-<h6>
-	"Davao City is a city on Mindanao, Philippines. As of the 2010 census, it had a population 
-of 1,449,296 people, making it the fourth-most-populous city in the Philippines and the most 
-populous in Mindanao. It is the center of Metro Davao, the third most populous metropolitan 
-area in the Philippines (as of 2010 Census with a population of 2.26 million, after Metro 
-Manila's 11.86 million and Metro Cebu's 2.55 million). With a total land area of 2,444 square 
-kilometers, the city is the largest in the country in terms of land area. The city serves as 
-the main trade, commerce, and industry hub of Mindanao and the regional center of Davao 
-Region. Davao is home to Mount Apo, the highest mountain in the Philippines. Davao is also 
-known as the "Durian Capital" of the Philippines." 
-<h7><a href="http://en.wikipedia.org/wiki/Davao_City">(source:http://en.wikipedia.org/wiki/Davao_City)</a></h7>
 
-	Every person that visits Mindanao here in the Philippines needs to know what Davao 
-City can offer their hungry eyes for places that fills with curiosity. This website is dedicated 
-for tourists that are or will visit Davao city. In addtion, even our locals here in Davao are 
-welcome on this site. Feel free to browse.
-</h6>
-</pre>
--->
 </div>
 
 <!FOOTER---------------------------------------------------------------------------------------------->
