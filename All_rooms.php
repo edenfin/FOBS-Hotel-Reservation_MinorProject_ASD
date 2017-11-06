@@ -155,10 +155,10 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 </div>
 
 <!BODY---------------------------------------------------------------------------------------------->
-<div id="body">
+<div id="body_long">
 <br><br><br>
-<center />
-<h6> Single Rooms </h6>
+<center /><a name="Single">
+<h6> Single Rooms </h6></a>
 <br><br><br>
 <h7>  "All single rooms here will definetely satisfy you" </h7>
 
@@ -170,26 +170,55 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 <div class="grow pic">
     <div class="tooltip">
 <img src="images/hotel_rooms/single_rooms/1.jpg">
-    <span class="tooltiptext">hey!</span>
+    <span class="tooltiptext">
+        <p><br>
+            Name: Single-Room(A)<br>
+            Price: 3,000<br>
+            WiFi: None
+        </p></span>
     </div>
 <h8> FOBS | Single Room (A) </h8></div>
 </td>
-<td><div class="grow pic">
+<td>
+<div class="grow pic">
+    <div class="tooltip">
 <img src="images/hotel_rooms/single_rooms/2.jpg">
-<br>
+    <span class="tooltiptext">
+        <p><br>
+            Name: Single-Room(B)<br>
+            Price: 4,000<br>
+            WiFi: None
+        </p></span>
+    </div>
 <h8> FOBS | Single Room (B) </h8></div>
 </td>
 
 
 <tr>
-<td><div class="grow pic">
+<td>
+<div class="grow pic">
+    <div class="tooltip">
 <img src="images/hotel_rooms/single_rooms/3.jpg">
-<br>
+    <span class="tooltiptext">
+        <p><br>
+            Name: Single-Room(C)<br>
+            Price: 5,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
 <h8> FOBS | Single Room (C) </h8></div>
 </td>
-<td><div class="grow pic">
+<td>
+<div class="grow pic">
+    <div class="tooltip">
 <img src="images/hotel_rooms/single_rooms/4.jpg">
-<br>
+    <span class="tooltiptext">
+        <p><br>
+            Name: Single-Room(D)<br>
+            Price: 6,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
 <h8> FOBS | Single Room (D) </h8></div>
 </td>
 </tr>
@@ -197,12 +226,187 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 <tr>
 <td>
 <div class="grow pic">
+    <div class="tooltip">
 <img src="images/hotel_rooms/single_rooms/5.jpg">
-    <br>
+    <span class="tooltiptext">
+        <p><br>
+            Name: Single-Room(E)<br>
+            Price: 7,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
 <h8> FOBS | Single Room (E) </h8></div>
 </td>
 </tr>    
 </table></center>
+    
+<br><br><br>
+<center /><a name="Double">
+<h6> Double Rooms </h6></a>
+<br><br><br>
+<h7>  "All double rooms here will definetely satisfy you" </h7>
+
+<br><br><br><br>
+<center>
+<table border="0" width="800px" height="700px">
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/double_rooms/1.jpeg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Double-Room(A)<br>
+            Price: 5,000<br>
+            WiFi: None
+        </p></span>
+    </div>
+<h8> FOBS | Single Room (A) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/double_rooms/2.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Double-Room(B)<br>
+            Price: 6,500<br>
+            WiFi: None
+        </p></span>
+    </div>
+<h8> FOBS | Double Room (B) </h8></div>
+</td>
+
+
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/double_rooms/3.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Double-Room(C)<br>
+            Price: 7,500<br>
+            WiFi: None
+        </p></span>
+    </div>
+<h8> FOBS | Single Room (C) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/double_rooms/4.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Double-Room(D)<br>
+            Price: 8,500<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Double Room (D) </h8></div>
+</td>
+</tr>
+    
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/double_rooms/5.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Double-Room(E)<br>
+            Price: 9,500<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Double Room (E) </h8></div>
+</td>
+</tr>    
+</table></center>   
+    
+<br><br><br>
+<center /><a name="Queen">
+<h6> Queen Rooms </h6></a>
+<br><br><br>
+<h7>  "All queen rooms here will definetely satisfy you" </h7>
+
+<br><br><br><br>
+<center>
+<table border="0" width="800px" height="700px">
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/queen/1.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Queen-Room(A)<br>
+            Price: 10,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Queen Room (A) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/queen/2.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Queen-Room(B)<br>
+            Price: 11,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Queen Room (B) </h8></div>
+</td>
+
+
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/queen/3.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Queen-Room(C)<br>
+            Price: 12,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Queen Room (C) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/queen/4.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Queen-Room(D)<br>
+            Price: 13,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Queen Room (D) </h8></div>
+</td>
+</tr>
+    
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/queen/5.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Queen-Room(E)<br>
+            Price: 14,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Queen Room (E) </h8></div>
+</td>
+</tr>    
+</table></center>   
 </div>
 
 <!FOOTER---------------------------------------------------------------------------------------------->
