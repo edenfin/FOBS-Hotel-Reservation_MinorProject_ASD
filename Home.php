@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="images/hotel_rooms/logo.jpg">
 <title> FOBS | Home </title>
 <link rel="stylesheet" type="text/css" href="css.css">
 </head>
@@ -196,7 +197,7 @@ welcome on this site. Feel free to browse.
 <!FOOTER---------------------------------------------------------------------------------------------->
 <div id="footer">
 <center>
-<h8> FOBS Hotel Reservation --- All Rights Reserved :)) </h8>
+<h8> FOBS Hotel Reservation --- All Rights Reserved - 2017 :)) </h8>
 </center>
 </div>
 </body>
