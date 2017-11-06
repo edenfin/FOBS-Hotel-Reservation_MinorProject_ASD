@@ -1,0 +1,254 @@
+body		{background-color: rgb(167, 200, 209);
+}
+
+p		{text-indent:50px;}
+		
+
+/*SLIDESHOW-----------------------------------------------------------------------*/
+
+.container	{
+	margin:50px auto;
+	width:500px;
+	height:300px;
+	overflow:hidden;
+	border:20px solid;
+	border-top-color:rgb(44, 74, 84);
+	border-left-color:rgb(66, 112, 125);
+	border-bottom-color:rgb(44, 74, 84);
+	border-right-color:rgb(66, 112, 125);
+	position:relative;}
+
+.photo	{
+	width:500px;
+	height:300px;
+	position:absolute;
+	animation:round 32s infinite;
+	opacity:0;}
+
+@keyframes round{   
+  25%{opacity:1;}
+  40%{opacity:0;}
+} 
+
+img:nth-child(8){animation-delay:0s;}
+img:nth-child(7){animation-delay:4s;}
+img:nth-child(6){animation-delay:8s;}
+img:nth-child(5){animation-delay:12s;}
+img:nth-child(4){animation-delay:16s;}
+img:nth-child(3){animation-delay:20s;}
+img:nth-child(2){animation-delay:24s;}
+img:nth-child(1){animation-delay:28s;}
+
+   
+/*MARQUEE GALLERY-----------------------------------------------------------------------*/
+		
+.THUMBNAIL	{
+		float:left;
+		width:50px;
+		height:50px;
+		margin:5px;}
+
+/*GROW PIC----------------------------------------------------------------------------------*/
+
+.grow img		{width:200px; height:150px;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;}
+.grow img:hover	{width:360px; height:300px;}
+
+
+/*SUB MENU-----------------------------------------------------------------------------*/
+
+ul {
+    font-family: high tower text;
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+li ul {
+    display: none;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(61, 109, 122);
+    white-space: nowrap;
+}
+ul li a:hover {
+background: white;
+}
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+li:hover li {
+    float: none;
+    font-size: 25px;
+}
+li:hover a { background: rgb(167, 200, 209); }
+li:hover li a:hover {
+    background: white;
+}
+
+.hovertable	td:hover	{background-color:rgb(61, 109, 122);}
+
+/*TEXT-HEADINGS-----------------------------------------------------------------------*/
+
+h1		{
+		font-family:Adobe Fangsong Std;
+		font-size:80%;
+		color:black;
+		display:inline;}
+
+
+h2		{
+		font-family:Lucida Calligraphy;
+		font-size:300%;
+		color:white;
+		display:inline;}
+
+h3		{
+		font-family:comic sans ms;
+		font-size:150%;
+		color:rgb(75, 75, 75);
+		display:inline;}
+
+h4		{
+		font-family:Rockwell;
+		font-size:175%;
+		color:white;
+		display:inline;}
+
+h5		{
+		font-family:times new roman;
+		font-size:100%;
+		color:white;
+		display:inline;}
+
+h6		{
+		font-family:agency fb;
+		font-size:260%;
+		color:rgb(255, 102, 102);
+		display:inline;}
+
+h7		{
+		font-family:high tower text;
+		font-size:120%;
+		color:red;
+		display:inline;}
+
+h8		{
+		font-family:Copperplate Gothic;
+		font-size:150%;
+		color:black;
+		display:inline;}
+
+h9		{
+		background-color:rgb(255, 102, 102);
+		font-family:high tower text;
+		font-size:300%;
+		color:black;
+		display:inline;}
+
+h10		{
+		font-family:Copperplate Gothic;
+		font-size:430%;
+		color:black;
+		display:inline;}
+
+
+	
+/*LINK STYLES-------------------------------------------------------------------------------*/
+
+a:link		{color:black; text-decoration:none;}
+a:active		{color:green;}
+a:hover		{color:rgb(142, 17, 20); text-decoration:underline;}
+a:visited		{color:black;}
+
+/*LAYOUTS-------------------------------------------------------------------------------*/
+
+#left_margin	{
+		background-color: rgb(167, 200, 209);
+		height:1000px;
+		width:135px;
+		float:left;}
+
+#top_links		{
+		background-color: white;
+		height:35px;}
+
+#header		{
+		height:100px;
+		padding:5px;
+		background-color: rgb(61, 109, 122);
+    		animation: mymove 3s infinite;}
+		@keyframes mymove {50% {background-color:rgb(167, 200, 209);}}
+
+#link_places	{background-color: rgb(61, 109, 122); height:65px;}
+
+#marquee_links	{background-color:rgb(75, 75, 75); height:70px;}
+
+#gallery_container	{
+		height:435px;
+		width:940px;
+		float:left;
+		padding:5px;}
+
+#body		{
+        text-align: center;
+		background-color:rgb(239, 239, 239);
+		height:1150px;
+		width:966px;
+		float:left;
+		padding-left:5px;}
+
+#body_center		{
+		background-color:rgb(239, 239, 239);
+		height:500px;
+		width:565px;
+		float:left;
+		padding-left: 410px;}
+
+#right_margin	{
+		background-color: rgb(167, 200, 209);
+		float:right;
+		height:1000px;
+		width:135px;}
+
+#footer		{
+		background-color:rgb(61, 109, 122);
+		clear:both;
+		height:50px;}
+
+.tooltop {
+    position:relative;
+    display:inline-block;
+    border-bottom:1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover
+.tooltiptext {
+    visibility: visible;
+}
