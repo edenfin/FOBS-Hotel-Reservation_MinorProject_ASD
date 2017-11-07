@@ -407,6 +407,176 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 </td>
 </tr>    
 </table></center>   
+    
+<br><br><br>
+<center /><a name="King">
+<h6> King Rooms </h6></a>
+<br><br><br>
+<h7>  "All king rooms here will definetely satisfy you" </h7>
+
+<br><br><br><br>
+<center>
+<table border="0" width="800px" height="700px">
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/king/1.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: King-Room(A)<br>
+            Price: 12,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | King Room (A) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/king/2.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: King-Room(B)<br>
+            Price: 13,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | King Room (B) </h8></div>
+</td>
+
+
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/king/3.jpg">
+    <span class="tooltiptext">
+        <p><br>
+           Name: King-Room(C)<br>
+            Price: 14,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | King Room (C) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/king/4.jpg">
+    <span class="tooltiptext">
+        <p><br>
+           Name: King-Room(D)<br>
+            Price: 15,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | King Room (D) </h8></div>
+</td>
+</tr>
+    
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/king/5.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: King-Room(E)<br>
+            Price: 16,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | King Room (E) </h8></div>
+</td>
+</tr>    
+</table></center>    
+    
+<br><br><br>
+<center /><a name="Studio">
+<h6> Studio Suite </h6></a>
+<br><br><br>
+<h7>  "All studio suites here will definetely satisfy you" </h7>
+
+<br><br><br><br>
+<center>
+<table border="0" width="800px" height="700px">
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/studio/1.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Studio-Suite(A)<br>
+            Price: 20,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Studio Suite (A) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/studio/2.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Studio-Suite(B)<br>
+            Price: 21,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Studio Suite (B) </h8></div>
+</td>
+
+
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/studio/3.jpg">
+    <span class="tooltiptext">
+        <p><br>
+           Name: Studio-Suite(C)<br>
+            Price: 22,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Studio Suite (C) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/studio/4.jpg">
+    <span class="tooltiptext">
+        <p><br>
+          Name: Studio-Suite(D)<br>
+            Price: 23,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Studio Suite (D) </h8></div>
+</td>
+</tr>
+    
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/studio/5.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Studio-Suite(E)<br>
+            Price: 24,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Studio Suite (E) </h8></div>
+</td>
+</tr>    
+</table></center>
+    
+   
 </div>
 
 <!FOOTER---------------------------------------------------------------------------------------------->
