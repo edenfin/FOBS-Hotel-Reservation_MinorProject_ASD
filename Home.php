@@ -169,7 +169,11 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 </div>
 
 <div id="body">
-
+<h8><center>FOBS' Hotel Reservation</center><br>
+	<blockquote>Welcome to FOBS' Hotel standing in the heart of Davao. A 30-minute travel to reach a must-visit destination with its unique blend of Western comfort and Asian hospitality.<br><br>
+	FOBS' Hotel  is your first step to experience DAVAO's Best and Pride. Surrounded with big shopping malls and business establishments, 35 elegants guest rooms and suites. Take time to relax with the ambiance, comfort warmth and space, that will surely provide utmost privacy. Almost all rooms are equipped with wifi connection and other ammenities.<br><br>
+	Enjoy with families and friends in our restaurants serving everything by day and night. Of course, FOBS' Hotel prioritizes the safety and security of all the guests and associates.</blockquote> 
+    </h8>
 </div>
 
 <!FOOTER---------------------------------------------------------------------------------------------->
