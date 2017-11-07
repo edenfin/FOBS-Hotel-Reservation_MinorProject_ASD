@@ -576,7 +576,173 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 </tr>    
 </table></center>
     
-   
+<br><br><br>
+<center /><a name="Master">
+<h6> Master Suite </h6></a>
+<br><br><br>
+<h7>  "All master suites here will definetely satisfy you" </h7>
+
+<br><br><br><br>
+<center>
+<table border="0" width="800px" height="700px">
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/master/1.jpeg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Master-Suite(A)<br>
+            Price: 20,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Master Suite (A) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/master/2.jpeg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Master-Suite(B)<br>
+            Price: 21,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Master Suite (B) </h8></div>
+</td>
+
+
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/master/3.jpg">
+    <span class="tooltiptext">
+        <p><br>
+           Name: Master-Suite(C)<br>
+            Price: 22,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Master Suite (C) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/master/4.jpg">
+    <span class="tooltiptext">
+        <p><br>
+          Name: Master-Suite(D)<br>
+            Price: 23,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Master Suite (D) </h8></div>
+</td>
+</tr>
+    
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/master/5.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Master-Suite(E)<br>
+            Price: 24,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Master Suite (E) </h8></div>
+</td>
+</tr>    
+</table></center> 
+    
+<br><br><br>
+<center /><a name="Luxury">
+<h6> Luxury Suite </h6></a>
+<br><br><br>
+<h7>  "All luxury suites here will definetely satisfy you" </h7>
+
+<br><br><br><br>
+<center>
+<table border="0" width="800px" height="700px">
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/luxury_premium/1.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Luxury-Suite(A)<br>
+            Price: 25,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Luxury Suite (A) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/luxury_premium/2.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Luxury-Suite(B)<br>
+            Price: 26,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Luxury Suite (B) </h8></div>
+</td>
+
+
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/luxury_premium/3.jpg">
+    <span class="tooltiptext">
+        <p><br>
+           Name: Luxury-Suite(C)<br>
+            Price: 27,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Luxury Suite (C) </h8></div>
+</td>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/luxury_premium/4.jpg">
+    <span class="tooltiptext">
+        <p><br>
+          Name: Luxury-Suite(D)<br>
+            Price: 28,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Luxury Suite (D) </h8></div>
+</td>
+</tr>
+    
+<tr>
+<td>
+<div class="grow pic">
+    <div class="tooltip">
+<img src="images/hotel_rooms/luxury_premium/5.jpg">
+    <span class="tooltiptext">
+        <p><br>
+            Name: Luxury-Suite(E)<br>
+            Price: 29,000<br>
+            WiFi: Available
+        </p></span>
+    </div>
+<h8> FOBS | Luxury Suite (E) </h8></div>
+</td>
+</tr>    
+</table></center>     
 </div>
 
 <!FOOTER---------------------------------------------------------------------------------------------->
