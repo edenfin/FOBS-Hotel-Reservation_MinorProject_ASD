@@ -205,9 +205,57 @@ a:visited		{color:black;}
 		padding:5px;}
 
 #body		{
-        text-align: center;
+        text-align: justify;
+        text-indent: 40px;
 		background-color:rgb(239, 239, 239);
 		height:1150px;
+		width:966px;
+		float:left;
+		padding-left:5px;}
+
+#bodys		{
+        text-align: 
+        text-indent: 40px;
+		background-color:rgb(239, 239, 239);
+		height:500px;
+		width:536px;
+		float:left;
+		padding-left:440px;
+}
+
+#body_left		{
+        text-align: justify;
+        text-indent: 40px;
+		background-color: darkviolet;
+		height:1150px;
+		width:280px;
+		float:left;
+		padding-left:50px;}
+
+#body_middle	{
+        text-align: justify;
+        text-indent: 40px;
+		background-color: firebrick;
+		height:1150px;
+		width:280px;
+		float:left;
+		padding-left:25px;
+        padding-right:25px;
+}
+
+#body_right		{
+        text-align: center;
+        text-indent: 40px;
+		background-color: forestgreen;
+		height:400px;    
+		width:316px;
+		float:left;
+}
+
+#body_long		{
+        text-align: center;
+		background-color:rgb(239, 239, 239);
+		height:7000px;
 		width:966px;
 		float:left;
 		padding-left:5px;}
@@ -217,7 +265,8 @@ a:visited		{color:black;}
 		height:500px;
 		width:565px;
 		float:left;
-		padding-left: 410px;}
+		padding-left: 410px;
+}
 
 #right_margin	{
 		background-color: rgb(167, 200, 209);
@@ -230,6 +279,22 @@ a:visited		{color:black;}
 		clear:both;
 		height:50px;}
 
+#float_scroll {
+    position: fixed;
+    background-color: aliceblue;
+    float: right;
+}
+
+.element {
+    background-color: coral;
+    position: fixed;
+    width: 135px;
+    height: 350px;
+    top: 250px;
+    right: 7px;
+    border-radius: 70px 25px;
+}
+
 .tooltop {
     position:relative;
     display:inline-block;
@@ -238,10 +303,10 @@ a:visited		{color:black;}
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 200px;
     background-color: black;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 5px 0;
     border-radius: 6px;
     position: absolute;

@@ -1,0 +1,265 @@
+
+if(($ci_m<$co_m) || ($ci_m>$co_m)){
+		if($ci_m == 1 || $ci_m == 01){
+		$ci_jan = 31 - $ci_d;
+		if($co_m == 02 || $co_m == 2){
+			$stay = $ci_jan + $co_d;
+		}
+		if($co_m == 03 || $co_m == 3){
+			$stay = $ci_jan + 28 + $co_d;
+		}
+		if($co_m == 04 || $co_m == 4){
+			$stay = $ci_jan + 28 + 31 + $co_d;
+		}
+		if($co_m == 05 || $co_m == 5){
+			$stay = $ci_jan + 28 + 31 + 30 + $co_d;
+		}
+		if($co_m == 06 || $co_m == 6){
+			$stay = $ci_jan + 28 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 07 || $co_m == 7){
+			$stay = $ci_jan + 28 + 31 + 30 + 31 + 30 +  $co_d;
+		}
+		if($co_m == 08 || $co_m == 8){
+			$stay = $ci_jan + 28 + 31 + 30 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_jan + 28 + 31 + 30 + 31 + 30 + 31 + 31 + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_jan + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_jan + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_jan + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + $co_d;
+		}
+		}
+		else if($ci_m == 2 || $ci_m == 02){
+			$ci_feb = 28 - $ci_d;
+			
+		if($co_m == 03 || $co_m == 3){
+			$stay = $ci_feb + $co_d;
+		}
+		if($co_m == 04 || $co_m == 4){
+			$stay = $ci_feb + 31 + $co_d;
+		}
+		if($co_m == 05 || $co_m == 5){
+			$stay = $ci_feb + 31 + 30 + $co_d;
+		}
+		if($co_m == 06 || $co_m == 6){
+			$stay = $ci_feb + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 07 || $co_m == 7){
+			$stay = $ci_feb + 31 + 30 + 31 + 30 +  $co_d;
+		}
+		if($co_m == 08 || $co_m == 8){
+			$stay = $ci_feb + 31 + 30 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_feb + 31 + 30 + 31 + 30 + 31 + 31 + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_feb + 31 + 30 + 31 + 30 + 31 + 31 + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_feb + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_feb + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + $co_d;
+		}
+		}
+		else if($ci_m == 3 || $ci_m == 03){
+			$ci_mar = 31 - $ci_d;
+		if($co_m == 04 || $co_m == 4){
+			$stay = $ci_mar + $co_d;
+		}
+		if($co_m == 05 || $co_m == 5){
+			$stay = $ci_mar + 30 + $co_d;
+		}
+		if($co_m == 06 || $co_m == 6){
+			$stay = $ci_mar + 30 + 31 + $co_d;
+		}
+		if($co_m == 07 || $co_m == 7){
+			$stay = $ci_mar + 30 + 31 + 30 +  $co_d;
+		}
+		if($co_m == 08 || $co_m == 8){
+			$stay = $ci_mar + 30 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_mar + 30 + 31 + 30 + 31 + 31 + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_mar + 30 + 31 + 30 + 31 + 31 + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_mar + 30 + 31 + 30 + 31 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_mar + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + $co_d;
+		}
+		}
+		
+		else if($ci_m == 4 || $ci_m == 04){
+			$ci_apr = 30 - $ci_d;
+		if($co_m == 05 || $co_m == 5){
+			$stay = $ci_apr + $co_d;
+		}
+		if($co_m == 06 || $co_m == 6){
+			$stay = $ci_apr + 31 + $co_d;
+		}
+		if($co_m == 07 || $co_m == 7){
+			$stay = $ci_apr + 31 + 30 +  $co_d;
+		}
+		if($co_m == 08 || $co_m == 8){
+			$stay = $ci_apr + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_apr + 31 + 30 + 31 + 31 + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_apr + 31 + 30 + 31 + 31 + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_apr + 31 + 30 + 31 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_apr + 31 + 30 + 31 + 31 + 30 + 31 + 30 + $co_d;
+		}
+		}
+		
+		else if($ci_m == 5 || $ci_m == 05){
+			$ci_may = 31 - $ci_d;
+		if($co_m == 06 || $co_m == 6){
+			$stay = $ci_may + $co_d;
+		}
+		if($co_m == 07 || $co_m == 7){
+			$stay = $ci_may + 30 +  $co_d;
+		}
+		if($co_m == 08 || $co_m == 8){
+			$stay = $ci_may + 30 + 31 + $co_d;
+		}
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_may + 30 + 31 + 31 + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_may + 30 + 31 + 31 + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_may + 30 + 31 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_may + 30 + 31 + 31 + 30 + 31 + 30 + $co_d;
+		}
+		}
+		
+		else if($ci_m == 6 || $ci_m == 06){
+			$ci_jun = 30 - $ci_d;
+		if($co_m == 07 || $co_m == 7){
+			$stay = $ci_jun +  $co_d;
+		}
+		if($co_m == 08 || $co_m == 8){
+			$stay = $ci_jun + 31 + $co_d;
+		}
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_jun + 31 + 31 + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_jun + 31 + 31 + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_jun + 31 + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_jun + 31 + 31 + 30 + 31 + 30 + $co_d;
+		}
+		}
+		
+		else if($ci_m == 7 || $ci_m == 07){
+			$ci_jul = 31 - $ci_d;
+		if($co_m == 08 || $co_m == 8){
+			$stay = $ci_jul + $co_d;
+		}
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_jul + 31 + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_jul + 31 + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_jul + 31 + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_jul + 31 + 30 + 31 + 30 + $co_d;
+		}
+		}
+		
+		else if($ci_m == 8 || $ci_m == 08){
+			$ci_aug = 31 - $ci_d;
+		if($co_m == 09 || $co_m == 9){
+			$stay = $ci_aug + $co_d;
+		}
+		if($co_m == 10){
+			$stay = $ci_aug + 30 + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_aug + 30 + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_aug + 30 + 31 + 30 + $co_d;
+		}
+		}
+		
+		else if($ci_m == 9 || $ci_m == 09){
+			$ci_sep = 30 - $ci_d;
+		if($co_m == 10){
+			$stay = $ci_sep + $co_d;
+		}
+		if($co_m == 11){
+			$stay = $ci_sep + 31 + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_sep + 31 + 30 + $co_d;
+		}
+	}
+	
+	else if($ci_m == 10 || $ci_m == 10){
+			$ci_oct = 31 - $ci_d;
+		if($co_m == 11){
+			$stay = $ci_oct + $co_d;
+		}
+		if($co_m == 12){
+			$stay = $ci_oct + 30 + $co_d;
+		}
+	}
+	
+	else if($ci_m == 11 || $ci_m == 11){
+			$ci_nov = 30 - $ci_d;
+		if($co_m == 12){
+			$stay = $ci_nov + 30 + $co_d;
+		}
+	}
+	
+	else if($ci_m == 12){
+			$ci_dec = 31 - $ci_d;
+		if($co_m == 01 || $co_m == 1){
+			$stay = $ci_dec + $co_d;
+		}
+		if($co_m == 02 || $co_m == 2){
+			$stay = $ci_dec + 28 + $co_d;
+		}
+		if($co_m == 03 || $co_m == 3){
+			$stay = $ci_dec + 28 + 31 + $co_d;
+		}
+	}
+	}	
+	else if($ci_m>$co_m){
+			$ci_oct = 31 - $ci_d;
+		if($co_m == 12){
+			$stay = $ci_dec + $co_d;
+		}
+	}
+	else if($ci_m == $co_m){
+		$stay = $co_d - $ci_d;
+	}

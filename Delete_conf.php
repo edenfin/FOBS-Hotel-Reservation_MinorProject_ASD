@@ -2,40 +2,12 @@
 <html>
 <head>
 <link rel="shortcut icon" href="images/hotel_rooms/logo.jpg">
+<title> FOBS | Confirmation </title>
 <link rel="stylesheet" type="text/css" href="css.css">
-<title> FOBS | Rooms </title>
-</head>   
-
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "use hotel_res";
-if ($conn->query($sql) === TRUE) {
-} 
- 
-$sql = "drop table rooms";
-if ($conn->query($sql) === TRUE) {
-} 
-    
-$sql = "drop table price";
-if ($conn->query($sql) === TRUE) {
-}    
-    
-$sql = "drop table max_res";
-if ($conn->query($sql) === TRUE) {
-}     
-?>    
+</head> 
     
 <body>
-<body bgcolor="#A7C8D1">
+
 <!MARGINS--------------------------------------------------------------------------------->
 <div id="left_margin">
 <br><br><br><br><br><br><br><br><br><br><br>
@@ -81,13 +53,14 @@ if ($conn->query($sql) === TRUE) {
 <table border="0" width="500px">
 <tr>
 <td><center><h1>
-<a href="http://localhost/Hotel%20Reservation/Home.php">HOME</a></h1>
+<a href="http://localhost/Hotel%20Reservation/Home.php"> 
+ HOME</a> </h1> 
 </center></td>   
     
 <td><h1>
     <a href="http://localhost/Hotel%20Reservation/Login.php">Customer Reservation Info</a></h1>
-</td>  
-
+</td>    
+    
 </tr>
 </table>
 </div>
@@ -99,7 +72,7 @@ if ($conn->query($sql) === TRUE) {
 <td><h2> FOBS - Hotel Reservation </h2></td>
 
 <td>
-<img src="images/hotel_rooms/logo.jpg" style width="200px" height="95px">
+<img src="images/hotel_rooms/logo.jpg" style width="200px" height="90px">
 </td>
 
 </tr>
@@ -107,12 +80,10 @@ if ($conn->query($sql) === TRUE) {
 </div>
 
 <!PLACES LINKS--------------------------------------------------------------------------------->
-
 <div id="link_places">
     <center />
-    <h10>Rooms</h10>
+    <h10>Delete Confirmation</h10>
 </div>
-
 <!MARQUEE LINKS--------------------------------------------------------------------------------->
 
 <div id="marquee_links">
@@ -145,77 +116,78 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 </table>
 </div>
 
-<!BODY---------------------------------------------------------------------------------------------->
+<!BODY------------------------------------------------------------------------------------------>  
 <div id="body">
-<br><br><br>
-<center />
-<h6> Types of Rooms and Suites </h6>
-<br><br><br>
-<h7>  "These are our rooms that we could offer. We are pleasured to serve you :)" </h7>
-
-<br><br><br><br>
-<center>
-<table border="0" width="700px" height="700px">
-<tr>
-<td>
-<div class="grow pic"><a href="All_rooms.php#Single">
-    <img src="images/hotel_rooms/single_rooms/1.jpg"></a>
-<br>
-<h8> Room Type (Single) </h8></div>
-</td>
-<td><div class="grow pic"><a href="All_rooms.php#Queen">
-    <img src="images/hotel_rooms/queen/1.jpg"></a>
-<br>
-<h8> Room Type (Queen) </h8></div>
-</td>
-
-
-<tr>
-<td><div class="grow pic"><a href="All_rooms.php#Double">
-    <img src="images/hotel_rooms/double_rooms/1.jpeg"></a>
-<br>
-<h8> Room Type (Double) </h8></div>
-</td>
-<td><div class="grow pic">
-    <a href="All_rooms.php#King">
-        <img src="images/hotel_rooms/king/1.jpg"></a>
-<br>
-<h8> Room Type (King) </h8></div>
-</td>
-</tr>
+<center /><br><br>
+<h8>Type in your password to confirm</h8>
+ <Form Name ="form1" Method ="POST" ACTION = "Delete_conf.php">
+<INPUT type="password" VALUE ="" NAME = "pword" placeholder="Password">
+    <br /><br />    
     
-<tr>
-<td>
-<div class="grow pic"><a href="All_rooms.php#Studio">
-    <img src="images/hotel_rooms/studio/1.jpg"></a>
-<br>
-<h8> Suite Type (Studio) </h8></div>
-</td>
-<td><div class="grow pic">
-    <a href="All_rooms.php#Master">
-        <img src="images/hotel_rooms/master/1.jpeg"></a>
-<br>
-<h8> Suite Type (Master) </h8></div>
-</td>
+<INPUT TYPE = "Submit" Name = "Submit" VALUE = "Delete">
+</INPUT>
+</INPUT>
+</Form>   
+    
+<?php   
+if (isset($_POST['Submit'])) {
+$pw = $_POST['pword'];
+$passw = null;
 
+if ($pw == "") {
+echo "<h6>Your last name or password is missing or incorrect</h6>";
+}
+else if($pw != ""){
+$servername = "localhost";
+$username = "root";
+$password = "";
 
-<tr>
-<td><div class="grow pic">
-    <a href="All_rooms.php#Luxury">
-        <img src="images/hotel_rooms/luxury_premium/1.jpg"></a>a
-<br>
-<h8> Suite Type (Luxury Premium) </h8></div>
-</td>
-</tr>    
-</table></center>
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "use hotel_res";
+if ($conn->query($sql) === TRUE) {
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+    
+// select values
+$sql = "select password from customers";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0){
+        while($row = $result->fetch_assoc()){
+             "Room: " . $row["password"];
+            $dbpword = $row["password"];
+            if($pw == $dbpword){
+                $passw = $dbpword;
+            }
+        }
+    }   
+
+if($pw == $passw){
+// select values
+$sql = "delete from customers where password='$pw'";
+    $result = $conn->query($sql);
+    header( "Location: Del_success.php" ); die;
+    }
+    else{
+         echo "<h6>Your last name or password is missing or incorrect</h6>";
+    }
+}
+}
+?>    
+       
 </div>
 
 <!FOOTER---------------------------------------------------------------------------------------------->
 <div id="footer">
 <center>
-<h8> FOBS - Hotel Reservation --- All Rights Reserved :)) </h8>
+<h8> FOBS Hotel Reservation --- All Rights Reserved - 2017 :)) </h8>
 </center>
 </div>
-</body>
 </body>
 </html>

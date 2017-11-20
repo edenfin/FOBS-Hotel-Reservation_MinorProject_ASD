@@ -2,48 +2,12 @@
 <html>
 <head>
 <link rel="shortcut icon" href="images/hotel_rooms/logo.jpg">
-<title> FOBS | Home </title>
+<title> FOBS | Confirmation </title>
 <link rel="stylesheet" type="text/css" href="css.css">
-</head>
-
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "use hotel_res";
-if ($conn->query($sql) === TRUE) {
-} 
-
-$sql = "drop table cico";
-if ($conn->query($sql) === TRUE) {
-} 
- 
-$sql = "drop table rooms";
-if ($conn->query($sql) === TRUE) {
-} 
-
-$sql = "drop table stays";
-if ($conn->query($sql) === TRUE) {
-} 
-    
-$sql = "drop table price";
-if ($conn->query($sql) === TRUE) {
-}    
-    
-$sql = "drop table max_res";
-if ($conn->query($sql) === TRUE) {
-}    
-?>
+</head> 
     
 <body>
-<body style="scroll-behavior: smooth">
+
 <!MARGINS--------------------------------------------------------------------------------->
 <div id="left_margin">
 <br><br><br><br><br><br><br><br><br><br><br>
@@ -91,12 +55,7 @@ if ($conn->query($sql) === TRUE) {
 <td><center><h1>
 <a href="http://localhost/Hotel%20Reservation/Home.php"> 
  HOME</a> </h1> 
-</center></td>
-
-<td><center><h1>
-    
-    <a href="#Reservation">RESERVATION</a></h1>
-</center></td>  
+</center></td>   
     
 <td><h1>
     <a href="http://localhost/Hotel%20Reservation/Login.php">Customer Reservation Info</a></h1>
@@ -123,7 +82,7 @@ if ($conn->query($sql) === TRUE) {
 <!PLACES LINKS--------------------------------------------------------------------------------->
 <div id="link_places">
     <center />
-    <h10>Home</h10>
+    <h10>Confirmation</h10>
 </div>
 <!MARQUEE LINKS--------------------------------------------------------------------------------->
 
@@ -157,34 +116,114 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 </table>
 </div>
 
-<!BODY---------------------------------------------------------------------------------------------->
-<div id="gallery_container">
-<div class="container">
-<img class='photo'  src="images/hotel_rooms/1.jpg">
-<img class='photo'  src="images/hotel_rooms/2.jpg">
-<img class='photo'  src="images/hotel_rooms/3.jpg">
-<img class='photo'  src="images/hotel_rooms/4.jpg">
-<img class='photo'  src="images/hotel_rooms/5.jpg">
-<img class='photo'  src="images/hotel_rooms/6.jpg">
-<img class='photo'  src="images/hotel_rooms/7.jpg">
-<img class='photo'  src="images/hotel_rooms/8.jpg">
-</div>
-</div>
-
+<!BODY------------------------------------------------------------------------------------------>  
 <div id="body">
-<h8><center>FOBS' Hotel Reservation</center><br>
-	<blockquote>Welcome to FOBS' Hotel standing in the heart of Davao. A 30-minute travel to reach a must-visit destination with its unique blend of Western comfort and Asian hospitality.<br><br>
-	FOBS' Hotel  is your first step to experience DAVAO's Best and Pride. Surrounded with big shopping malls and business establishments, 35 elegant guest rooms and suites. Take time to relax with the ambiance, comfort warmth and space, that will surely provide utmost privacy. Almost all rooms are equipped with wifi connection and other ammenities.<br><br>
-	Enjoy with families and friends in our restaurants serving everything by day and night. Of course, FOBS' Hotel prioritizes the safety and security of all the guests and associates.</blockquote> 
-    </h8>
+<center /><br><br>
+<?php
     
-    <blockquote><center />
-    <a name="Reservation">
-    <h6>Process for Room Reservation</h6></a><br>
-    <h8>The process of reserving a room in our website is to first pick a date of checking on and checking out, second will be picking of a room, and lastly to input customer information</h8></blockquote>
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+// insert values
+$sql = "use hotel_res";
+if ($conn->query($sql) === TRUE) {
+} else {
+    echo "Error creating database: " . $conn->error;
+}
     
-    <blockquote>
-    <h8>Proceed to picking a check-in, check-out date. Click <a href="CICO.php"><strong>here!</strong></a></h8></blockquote>
+$sql = "select * from cico";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0){
+        while($row = $result->fetch_assoc()){
+             "Check-in: " . $row["check_in"] . "<br>" . "Check-out: " . $row["check_out"]. "<br>";
+            $ci = $row["check_in"];
+            $co = $row["check_out"];
+        }
+    }
+    
+$sql = "select * from rooms";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0){
+        while($row = $result->fetch_assoc()){
+             "Room: " . $row["room"];
+            $room = $row["room"];
+        }
+    }
+//submit from User_info
+if (isset($_POST['Submit'])) {
+    
+$fn = $_POST['fname'];
+$ln = $_POST['lname'];
+$pw = $_POST['pword'];
+$passw=null;
+
+if ($fn == "" || $ln == "" || $pw == "") {
+echo "<h8>Some fields are missing!!!</h8><br><br>";
+$link = "User_info.php";
+print "<a href='".$link."'><h6>Click me<br> to user info<br> choosing dates</h6></a>";
+    
+}
+else if($fn != "" && $ln != "" && $pw != "" ){
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}    
+$sql = "use hotel_res";
+if ($conn->query($sql) === TRUE) {
+} else {
+    echo "Error creating database: " . $conn->error;
+}    
+    
+    $sql = "select password from customers";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0){
+        while($row = $result->fetch_assoc()){
+            "Room: " . $row["password"];
+            $dbpword = $row["password"];
+            if($pw == $dbpword){
+                $passw = $dbpword;
+            }
+        }
+    }
+    
+if($pw == $passw){
+// select values
+        echo "<h8>$pw " . "<br>is already taken :( </h8><br><br>";
+        $link = "User_info.php";
+        print "<a href='".$link."'><h6>Click me to go<br> back to customer info</h6></a>";
+        }   
+else{
+    $sql = "use hotel_res";
+if ($conn->query($sql) === TRUE) {
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+    
+// insert values
+$sql = "insert into customers values
+        ('$fn','$ln','$ci','$co','$room','$pw')";
+if ($conn->query($sql) === TRUE) {
+        echo "<h8>Thanks for choosing us, we hope to serve you soon</h8>"
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+}       
+}
+}
+?>     
+       
 </div>
 
 <!FOOTER---------------------------------------------------------------------------------------------->
@@ -193,6 +232,5 @@ onmouseover="this.stop ();" onmouseout="this.start ();">
 <h8> FOBS Hotel Reservation --- All Rights Reserved - 2017 :)) </h8>
 </center>
 </div>
-</body>
 </body>
 </html>
